@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Minimal URL Text Editor</title>
+<style>
+
+/* apakah kalian tau bahwa....*/
+
+body {
+  margin: 0;
+  font-family: monospace;
+  background: #011c24;
+  color: #e5e7eb;}
+textarea {
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;}
+</style>
+</head>
+<body>
+
+<textarea id="editor" placeholder="Catat di sini..."></textarea>
+
+<script>
+const editor = document.getElementById("editor");
+if (location.hash.length > 1) {
+  try {
+    const data = decodeURIComponent(location.hash.substring(1));
+    editor.value = atob(data);} 
+    catch {
+    editor.value = "Gagal decode URL :( ";}
+}
+editor.addEventListener("input", () => {
+  const encoded = btoa(editor.value);
+  history.replaceState(null, "", "#" + encodeURIComponent(encoded));
+});
+
+/* bahwa....Violet Evergarden adalah my is3 ? */
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+Bapak Mulyono raja tipu-tipu~
+
+Mobil ESEMKA hanyalah salah satu~
+
+Banyak fakta banyak bukti ditemui~
+
+Mulyono serakahnya setengah mati~
+-->
